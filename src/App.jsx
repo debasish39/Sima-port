@@ -5,6 +5,9 @@ import About from "./components/About";
 import Serials from "./components/Serials";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import ScrollToTopButton from './components/ScrollToTopButton';
+
 export default function App() {
   return (
     <div className="overflow-x-hidden text-stone-300 antialiased ">
@@ -21,7 +24,10 @@ export default function App() {
         <About/>
         <Serials/>
         <Gallery/>
+        <Contact/>
         <Footer/>
+        <ScrollToTopButton />
+
        </div>
     </div>
   );

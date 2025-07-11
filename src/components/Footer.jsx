@@ -1,9 +1,15 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+  FaWhatsapp,
+} from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className=" text-stone-300 px-4 sm:px-6 py-12">
+    <footer className="text-stone-300 px-4 sm:px-6 py-12 bg-black">
       <hr className="mb-8 border-stone-700" />
 
       {/* Grid Layout */}
@@ -33,7 +39,7 @@ export default function Footer() {
           <h4 className="text-xl font-semibold mb-3 text-white">Follow Me</h4>
           <div className="flex gap-4 justify-center sm:justify-start flex-wrap">
             <a
-              href="https://facebook.com"
+              href="https://facebook.com/simanchala.padhi.7/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -42,7 +48,7 @@ export default function Footer() {
               <FaFacebookF />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/parbatiputra_sima/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -51,16 +57,7 @@ export default function Footer() {
               <FaInstagram />
             </a>
             <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="p-3 bg-stone-800 rounded-full hover:bg-stone-700 transition"
-            >
-              <FaLinkedinIn />
-            </a>
-            <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@Disgusting-pd4yp"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="YouTube"
@@ -68,12 +65,21 @@ export default function Footer() {
             >
               <FaYoutube />
             </a>
+            <a
+              href="https://wa.me/918895853497"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="p-3 bg-stone-800 rounded-full hover:bg-stone-700 transition"
+            >
+              <FaWhatsapp />
+            </a>
           </div>
         </div>
       </div>
 
-      {/* Bottom Copyright */}
-      <div className="mt-12 text-center text-xs text-stone-500 border-t border-stone-700 pt-4 ">
+      {/* Copyright */}
+      <div className="mt-12 text-center text-xs text-stone-500 border-t border-stone-700 pt-4">
         © {new Date().getFullYear()} Simanchala Padhi. All rights reserved.
       </div>
     </footer>
