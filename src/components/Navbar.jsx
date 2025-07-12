@@ -78,14 +78,14 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-2xl cursor-pointer">
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
       {/* Mobile Menu (basic fade-in via Tailwind) */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-6 bg-black/70 py-6 px-4 transition-all duration-300">
+        <div className=" md:hidden flex flex-col items-center gap-6 bg-transparent py-6 px-4 transition-all duration-300">
           {navLinks.map((link) => (
             <a
               key={link.name}
