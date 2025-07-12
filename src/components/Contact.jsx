@@ -9,7 +9,7 @@ export default function Contact() {
   const accessKey = import.meta.env.VITE_WEB3FORMS_KEY;
 
   useEffect(() => {
-    AOS.init({ duration: 300 });
+    AOS.init({ duration: 500 });
   }, []);
 
   const handleSubmit = async (e) => {
@@ -48,43 +48,48 @@ export default function Contact() {
         </p>
 
         <form onSubmit={handleSubmit} className="grid gap-6">
-          {/* Name */}
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="w-full px-4 py-3 rounded-lg bg-transparent text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 border border-gray-600"
-          />
+  {/* Name */}
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    data-aos="fade-right" data-aos-delay="300"
+    className="w-full px-4 py-3 rounded-lg bg-transparent text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 border border-gray-600"
+  />
 
-          {/* Email */}
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="w-full px-4 py-3 rounded-lg bg-transparent text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 border border-gray-600"
-          />
+  {/* Email */}
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    data-aos="fade-left" data-aos-delay="400"
+    className="w-full px-4 py-3 rounded-lg bg-transparent text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 border border-gray-600"
+  />
 
-          {/* Message */}
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            className="w-full px-4 py-3 rounded-lg bg-transparent text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 border border-gray-600"
-          ></textarea>
+  {/* Message */}
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="Your Message"
+    required
+    data-aos="fade-up" data-aos-delay="500"
+    className="w-full px-4 py-3 rounded-lg bg-transparent text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-stone-500 border border-gray-600"
+  ></textarea>
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-stone-600 to-stone-800 text-white font-semibold rounded-lg shadow-md justify-center
-                     hover:shadow-lg hover:scale-105 active:scale-95 transform duration-300 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
-          >
-            <FaPaperPlane />
-            Send Message
-          </button>
-        </form>
+  {/* Submit Button */}
+  <button
+    type="submit"
+    data-aos="zoom-in" data-aos-delay="600"
+    className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-stone-600 to-stone-800 text-white font-semibold rounded-lg shadow-md justify-center
+             hover:shadow-lg hover:scale-105 active:scale-95 transform duration-300 focus:outline-none focus:ring-2 focus:ring-stone-400 transition"
+  >
+    <FaPaperPlane />
+    Send Message
+  </button>
+</form>
+
 
         {/* Status Message */}
         {status && (

@@ -78,11 +78,14 @@ export default function Serials() {
   rel="noopener noreferrer"
   data-aos="zoom-in-up"
   data-aos-delay={idx * 100}
-  className="bg-stone-800 rounded-xl overflow-hidden shadow-xl 
-             hover:shadow-2xl active:shadow-2xl 
+  className="bg-stone-800 rounded-xl overflow-hidden 
+             shadow-md 
+             hover:shadow-[3px_3px_20px_white] 
+             active:shadow-[0_8px_20px_white]
+             focus:shadow-[0_8px_20px_white] 
              transition-all duration-300 
              hover:scale-[1.03] active:scale-[1.03] 
-             focus:outline-none focus:ring-2 focus:ring-stone-500"
+             focus:outline-none focus:ring-2 focus:ring-stone-400"
 >
   <img
     src={serial.thumbnail}

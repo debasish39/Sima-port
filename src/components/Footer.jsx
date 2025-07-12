@@ -9,8 +9,8 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="text-stone-300 px-4 sm:px-6 py-12 bg-black">
-      <hr className="mb-8 border-stone-700" />
+    <footer className="text-stone-300 px-4 sm:px-6 py-12 ">
+      <hr className="mb-8 border-stone-100" />
 
       {/* Grid Layout */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-center sm:text-left">

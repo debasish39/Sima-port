@@ -34,7 +34,14 @@ export default function Gallery() {
             <img
               src={src}
               alt={`Gallery ${i + 1}`}
-              className="rounded-xl object-cover w-full h-full hover:scale-105 transition-transform duration-300 shadow-md cursor-pointer active:scale-105 focus:scale-75"
+               className="rounded-xl object-cover w-full h-full 
+             transition-all duration-300 
+             hover:scale-105 active:scale-100 focus:scale-105 
+             hover:shadow-[3px_3px_18px_white] 
+             active:shadow-[3px_3px_20px_white] 
+             focus:shadow-[3px_3px_20px_white] 
+             focus:outline-none focus:ring-2 focus:ring-stone-400 
+             cursor-pointer"
               onClick={() => setIndex(i)}
             />
           </div>
