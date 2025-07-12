@@ -85,7 +85,7 @@ export default function Navbar() {
 
       {/* Mobile Menu (basic fade-in via Tailwind) */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-center gap-6 bg-[#050504]/95 py-6 px-4 transition-all duration-300">
+        <div className="md:hidden flex flex-col items-center gap-6 bg-black/70 py-6 px-4 transition-all duration-300">
           {navLinks.map((link) => (
             <a
               key={link.name}
