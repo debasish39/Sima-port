@@ -62,31 +62,32 @@ export default function Hero() {
           {/* Buttons */}
         {/* Buttons */}
 <div
-  className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+  className="mt-8 flex flex-row sm:flex-row gap-4 justify-center md:justify-start"
   data-aos="fade-up"
   data-aos-delay="300"
 >
   <a
     href="mailto:tusalaa291@gmail.com"
-    className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-600 to-stone-800 text-white text-sm sm:text-base font-semibold shadow-md justify-center
-               hover:shadow-lg 
-               focus:outline-none focus:ring-2 focus:ring-stone-400 
-               active:scale-95 
-               transition duration-300"
+     className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-700 to-stone-900 text-white text-sm sm:text-base font-semibold shadow-md 
+             hover:from-[#34363a] hover:to-[#A9AFBA] hover:text-black
+             focus:outline-none focus:ring-2 focus:ring-stone-500 
+             active:scale-95 
+             transition duration-300 justify-center"
   >
     <MdEmail size={20} /> Email Me
   </a>
 
   <a
-    href="tel:+91 88958 53497"
-    className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-700 to-stone-900 text-white text-sm sm:text-base font-semibold shadow-md 
-               hover:shadow-lg 
-               focus:outline-none focus:ring-2 focus:ring-stone-500 
-               active:scale-95 
-               transition duration-300 justify-center"
-  >
-    <MdPhone size={20} /> Call Me
-  </a>
+  href="tel:+91 88958 53497"
+  className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-700 to-stone-900 text-white text-sm sm:text-base font-semibold shadow-md 
+             hover:from-[#34363a] hover:to-[#A9AFBA] hover:text-black
+             focus:outline-none focus:ring-2 focus:ring-stone-500 
+             active:scale-95 
+             transition duration-300 justify-center"
+>
+  <MdPhone size={20} /> Call Me
+</a>
+
 </div>
 
         </div>

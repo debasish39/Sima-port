@@ -12,10 +12,10 @@ import ClickSpark from './components/ClickSpark'; // make sure path is correct
 export default function App() {
   return (
     <ClickSpark 
-      sparkColor="white" 
-      sparkSize={15} 
-      sparkRadius={20} 
-      sparkCount={15} 
+      sparkColor="#A9AFBA" 
+      sparkSize={18} 
+      sparkRadius={3} 
+      sparkCount={30} 
       duration={400} 
       easing="ease-out"
       extraScale={1.0}
