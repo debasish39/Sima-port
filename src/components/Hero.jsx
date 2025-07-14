@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="w-full md:w-1/2 text-center md:text-left md:mt-9">
           {/* Name */}
           <h1
-            className="text-4xl sm:text-5xl md:text-5xl xl:text-7xl font-bold bg-gradient-to-r from-gray-300 to-gray-500 text-transparent bg-clip-text mb-2"
+            className="text-3xl sm:text-5xl md:text-5xl xl:text-7xl font-bold bg-gradient-to-r from-gray-300 to-gray-500 text-transparent bg-clip-text mb-2"
             style={{ fontFamily: 'Lobster, cursive' }}
             data-aos="zoom-in"
           >
@@ -62,33 +62,33 @@ export default function Hero() {
           {/* Buttons */}
         {/* Buttons */}
 <div
-  className="mt-8 flex flex-row sm:flex-row gap-4 justify-center md:justify-start"
+  className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
   data-aos="fade-up"
   data-aos-delay="300"
 >
   <a
     href="mailto:tusalaa291@gmail.com"
-     className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-700 to-stone-900 text-white text-sm sm:text-base font-semibold shadow-md 
-             hover:from-[#34363a] hover:to-[#A9AFBA] hover:text-black
-             focus:outline-none focus:ring-2 focus:ring-stone-500 
-             active:scale-95 
-             transition duration-300 justify-center"
+    className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-700 to-stone-900 text-white text-sm sm:text-base font-semibold shadow-md 
+               hover:from-[#34363a] hover:to-[#A9AFBA] hover:text-black
+               focus:outline-none focus:ring-2 focus:ring-stone-500 
+               active:scale-95 
+               transition duration-300 justify-center"
   >
     <MdEmail size={20} /> Email Me
   </a>
 
   <a
-  href="tel:+91 88958 53497"
-  className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-700 to-stone-900 text-white text-sm sm:text-base font-semibold shadow-md 
-             hover:from-[#34363a] hover:to-[#A9AFBA] hover:text-black
-             focus:outline-none focus:ring-2 focus:ring-stone-500 
-             active:scale-95 
-             transition duration-300 justify-center"
->
-  <MdPhone size={20} /> Call Me
-</a>
-
+    href="tel:+91 88958 53497"
+    className="px-6 py-3 flex items-center gap-2 rounded-lg bg-gradient-to-r from-stone-700 to-stone-900 text-white text-sm sm:text-base font-semibold shadow-md 
+               hover:from-[#34363a] hover:to-[#A9AFBA] hover:text-black
+               focus:outline-none focus:ring-2 focus:ring-stone-500 
+               active:scale-95 
+               transition duration-300 justify-center"
+  >
+    <MdPhone size={20} /> Call Me
+  </a>
 </div>
+
 
         </div>
       </div>
