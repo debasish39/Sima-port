@@ -10,7 +10,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-16">
+    <section className="pt-9 sm:pt-24 pb-16 px-4 sm:px-6 lg:px-16"id="hero">
       <div className="flex flex-col md:flex-row items-center gap-12 mt-9">
         {/* Image Section */}
         <div
